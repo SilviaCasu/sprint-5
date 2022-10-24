@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>joke</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <h1>Are you ready to laugh?</h1>
+
+        <div class="joke"></div>
+        <div id="result"></div>
+        <div class=score>
+            <p>did you like the joke?
+                rate how much, from 1 to 3</p>
+            <button class="button" onclick='SCORE(actualJoke, 1)'>1</button>
+            <button class="button" onclick='SCORE(actualJoke, 2)'>2</button>
+            <button class="button" onclick='SCORE(actualJoke, 3)'>3</button>
+        </div>
+        <button id="btnSiguiente" onclick="UPLOADING_JOKES()">Next joke</button>
+
+
+    </div>
+
+    <script src="api.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
